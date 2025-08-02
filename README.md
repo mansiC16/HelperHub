@@ -23,5 +23,6 @@ This project was built as part of my IT Engineering studies at Vishwakarma Insti
 - npm (comes with Node.js)
 - A Firebase project (set up Authentication, Realtime Database, and Storage)
 
-## How to Run Locally
-1. Clone the repository:  
+  ## Screenshots
+Below are screenshots of the app's key outputs, showing how it looks and functions when running. These demonstrate the UI and user flow.
+
