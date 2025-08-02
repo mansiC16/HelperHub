@@ -1,0 +1,74 @@
+/* HouseServiceForm.css */
+
+:root {
+    --primary-color: #6a1b9a;
+    --secondary-color: #4a148c;
+    --light-color: #f4f4f4;
+    --text-color: #ffffff;
+  }
+  
+  .container {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    border-top: 5px solid var(--primary-color);
+  }
+  
+  .form-container h2 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  

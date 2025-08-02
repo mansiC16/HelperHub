@@ -1,0 +1,414 @@
+/* styles/HomePage.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4a148c;
+    padding: 1rem 2rem;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .nav-tabs {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-tab {
+    padding: 0.5rem 1.2rem;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-tab:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .nav-tab.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .user-initial {
+    color: #4a148c;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Main content */
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  /* User type badge */
+  .user-type-badge {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: #4a148c;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: 500;
+    z-index: 10;
+  }
+  
+ /* Banner Styles - UPDATED with transparency and slogan */
+.banner-container {
+    width: 100vw; /* Full viewport width */
+    height: 400px; /* Default height */
+    position: relative;
+    margin-left: -2rem; /* Offset padding to make it full-width */
+    margin-right: -2rem; /* Offset padding to make it full-width */
+    margin-bottom: 3rem;
+    overflow: hidden;
+    cursor: pointer; /* Shows it's clickable */
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    opacity: 0.8; /* Makes the image slightly transparent */
+  }
+  
+  .banner-container:hover .banner-image {
+    transform: scale(1.02); /* Subtle zoom effect on hover */
+  }
+  
+  /* Banner slogan overlay */
+  .banner-slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 5;
+    width: 80%;
+  }
+  
+  .banner-slogan h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .banner-slogan p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Responsive banner adjustments */
+  @media (max-width: 768px) {
+    .banner-container {
+      height: 250px; /* Smaller height on mobile */
+      margin: 0 -2rem 3rem -2rem;
+      width: calc(100% + 4rem);
+    }
+    
+    .banner-slogan h1 {
+      font-size: 1.8rem;
+    }
+    
+    .banner-slogan p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Service Cards */
+  .services-section {
+    margin-bottom: 3rem;
+  }
+  
+  .services-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .service-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-image {
+    height: 180px;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .service-card:hover .card-image img {
+    transform: scale(1.1);
+  }
+  
+  .service-card h3 {
+    padding: 1rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .apply-button {
+    display: block;
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    padding: 0.8rem;
+    background-color: #4a148c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-button:hover {
+    background-color: #6a1b9a;
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    margin-bottom: 3rem;
+  }
+  
+  .tab-content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 3rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    color: #666;
+  }
+  
+  /* Team Section */
+  .team-section {
+    margin-bottom: 3rem;
+  }
+  
+  .team-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .team-member {
+    width: 220px;
+    text-align: center;
+  }
+  
+  .member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem auto;
+    border: 3px solid #4a148c;
+  }
+  
+  .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+  
+  .team-member p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #4a148c;
+    color: white;
+    padding: 3rem 2rem 1rem 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-logo p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+  }
+  
+  .footer-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-section a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .service-cards {
+      flex-direction: column;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .footer-links {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .team-members {
+      justify-content: center;
+    }
+    
+    /* Responsive banner */
+    .banner-container {
+      height: 250px; /* Smaller height on mobile */
+      margin: 0 -2rem 3rem -2rem; /* Extend beyond padding to be truly full-width on mobile */
+      width: calc(100% + 4rem);
+    }
+  }
+
+  /* Add these styles to your existing HomePage.css */
+
+/* Loading Screen */
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f5f5f5;
+  color: #4a148c;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.loading-screen::after {
+  content: "...";
+  animation: dots 1.5s infinite;
+  width: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+@keyframes dots {
+  0%, 20% { content: "."; }
+  40% { content: ".."; }
+  60%, 100% { content: "..."; }
+}

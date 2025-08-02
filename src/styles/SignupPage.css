@@ -1,0 +1,268 @@
+
+/* styles/LandingPage.css */
+.landing-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .left-section {
+    width: 50%;
+    background-color: #4a148c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+  }
+  
+  .animation-container {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    position: relative;
+  }
+  
+  .animation-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .animation-item.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animation-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .animation-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .animation-item p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  .right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .logo-container {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .logo-container h1 {
+    font-size: 3rem;
+    color: #4a148c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .user-type-selection {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .user-type-selection h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .user-type-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .user-type-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employer-button:hover {
+    border-color: #4a148c;
+  }
+  
+  .job-seeker-button:hover {
+    border-color: #6a1b9a;
+  }
+  
+  .user-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .user-type-button span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .button-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* styles/SignupPage.css */
+  .signup-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4a148c;
+    padding: 2rem;
+  }
+  
+  .signup-form-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title {
+    color: #4a148c;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .user-type-indicator {
+    display: inline-block;
+    background-color: #f0e5ff;
+    color: #4a148c;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .form-group input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #4a148c;
+    box-shadow: 0 0 0 2px rgba(74, 20, 140, 0.2);
+  }
+  
+  .error-message {
+    color: #d32f2f;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .submit-button {
+    background-color: #4a148c;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .submit-button:disabled {
+    background-color: #9e9e9e;
+    cursor: not-allowed;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #6a1b9a;
+  }
+  
+  .form-toggle {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #666;
+  }
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    color: #4a148c;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.25rem;
+  }
+  
+  .toggle-button:hover {
+    text-decoration: underline;
+  }
