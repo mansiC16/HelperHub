@@ -24,5 +24,7 @@ This project was built as part of my IT Engineering studies at Vishwakarma Insti
 - A Firebase project (set up Authentication, Realtime Database, and Storage)
 
   ## Screenshots
-Below are screenshots of the app's key outputs, showing how it looks and functions when running. These demonstrate the UI and user flow.
+  Below are screenshots of the app's key outputs, showing how it looks and functions when running. These demonstrate the UI and user flow.
+  <img width="1917" height="901" alt="login" src="https://github.com/user-attachments/assets/fd2e8a11-9508-4025-9353-d805dbb500c5" />
+
 
